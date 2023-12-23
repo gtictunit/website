@@ -10,6 +10,7 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 import Image from "next/image";
+import logo from "../../../public/assets/images/gt_logo.png";
 
 export const Footer = () => {
   return (
@@ -53,13 +54,7 @@ export const Footer = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <div className="text-uppercase fw-bold mb-1 flex align-items-center gap-6">
-                  <Image
-                    src={"/assets/images/gt_logo.png"}
-                    alt="Logo"
-                    width="50"
-                    height="auto"
-                    className=""
-                  />
+                  <Image src={logo} alt="Logo" height="auto" className="" />
                 </div>
                 <h3 className="text-uppercase fw-bold mb-4">
                   Glory Tabernacle Ministry

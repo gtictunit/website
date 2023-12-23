@@ -18,7 +18,7 @@ module.exports = {
         gt_red: "red",
       },
       boxShadow: {
-        main: "rgba(0, 0, 0, 0.24) 0px 3px 8px;",
+        main: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],

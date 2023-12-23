@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-// import logo from "../../../public/assets/images/gt_logo.png";
+import logo from "../../../public/assets/images/gt_logo.png";
 import styles from "./navbar.module.css";
 import { HiChevronDown } from "react-icons/hi";
 import { Twirl as Hamburger } from "hamburger-react";
@@ -20,7 +20,7 @@ export const Navbar = () => {
       <div className="container mx-auto w-full flex justify-between items-center py-[10px] px-4 md:px-[30px]">
         <Link href={"/"} className={`flex items-center gap-2 no-underline`}>
           <Image
-            src={"/assets/images/gt_logo.png"}
+            src={logo}
             alt="Glory Tabernacle Ministry Logo"
             className={"w-[30px] md:w-[50px] h-full"}
           />
@@ -130,7 +130,7 @@ export const Navbar = () => {
           }`}>
           <div className="flex justify-between items-center mb-[20px]">
             <Image
-              src={"/assets/images/gt_logo.png"}
+              src={logo}
               alt="Glory Tabernacle Ministry Logo"
               className={"w-[35px] md:w-[50px] h-full"}
             />
