@@ -129,8 +129,8 @@ export const Navbar = () => {
             isOpen ? "translate-y-[0px]" : "-translate-y-[500px]"
           }`}>
           <div className="flex justify-between items-center mb-[20px]">
-            <img
-              src={logo}
+            <Image
+              src={"/assets/images/gt_logo.png"}
               alt="Glory Tabernacle Ministry Logo"
               className={"w-[35px] md:w-[50px] h-full"}
             />
