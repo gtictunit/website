@@ -1,0 +1,35 @@
+.overlayContainer {
+  position: relative;
+}
+
+.overlayHeader {
+  background-image: url("../../assets/images/about.jpg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* z-index: 200; */
+}
+
+.child {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  align-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
