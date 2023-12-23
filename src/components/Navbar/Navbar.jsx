@@ -108,7 +108,7 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact-us" className={styles.nav_link}>
+              <Link href="/contact" className={styles.nav_link}>
                 Contact us
               </Link>
             </li>

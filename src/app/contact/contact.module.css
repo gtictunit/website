@@ -1,0 +1,142 @@
+/* Contatct Us */
+
+.contact {
+  position: relative;
+}
+
+.contact_wrapper {
+  color: #3d0052;
+  padding: 53px;
+  background-color: #fff;
+}
+
+.address h4 {
+  font-family: Poppins;
+  color: #353535;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.address p {
+  font-family: Raleway;
+  color: #5c5c5c;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact_cta {
+  display: flex;
+  gap: 32px;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 75px 0;
+}
+
+.contact_card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid transparent;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  height: 100%;
+  flex: 1;
+}
+
+.contact_card .icon_wrapper {
+  width: 40px;
+  height: 40px;
+}
+
+.contact_details h4 {
+  font-family: Ubuntu;
+  color: #5c5c5c;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.contact_details p {
+  color: #979797;
+  margin-bottom: 0px !important;
+}
+
+.contact_form {
+  width: 100%;
+  background-color: #f9f9f9;
+  /* padding: 100px 0; */
+}
+
+.form_container {
+  padding: 100px 100px 100px 0;
+}
+
+.submit_button {
+  border: 1px solid transparent !important;
+  border-radius: 30px !important;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fff;
+  padding: 10px 10px !important;
+  background: linear-gradient(
+    315deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(109, 9, 121, 1) 35%,
+    rgba(203, 42, 42, 1) 75%
+  ) !important;
+  cursor: pointer;
+  transition: all;
+}
+
+.submit-button:hover {
+  opacity: 0.65;
+  color: #fff;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.social-links i {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .address h4 {
+    font-size: 28px;
+  }
+
+  .contact-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 25px 0;
+  }
+
+  .address p {
+    font-size: 15px;
+  }
+
+  .abeg {
+    padding: 20px;
+  }
+
+  .form-container h3 {
+    font-size: 28px;
+  }
+
+  .form-container {
+    padding: 30px;
+    margin: 20px 0;
+  }
+  .submit-button {
+    width: 100%;
+  }
+  .map {
+    height: 400px;
+    margin-bottom: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
