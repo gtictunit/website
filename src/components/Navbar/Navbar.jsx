@@ -1,22 +1,26 @@
+"use client";
+
 import React from "react";
-import logo from "../../assets/images/gt_logo.png";
+// import logo from "../../../public/assets/images/gt_logo.png";
 import styles from "./navbar.module.css";
 import { HiChevronDown } from "react-icons/hi";
 import { Twirl as Hamburger } from "hamburger-react";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa6";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export const Navbar = () => {
-  // const { pathname } = useLocation();
+  const pathname = usePathname();
   const [isOpen, setOpen] = React.useState(false);
 
   return (
     <nav className={"w-full bg-gt_purple  shadow-main"}>
       <div className="container mx-auto w-full flex justify-between items-center py-[10px] px-4 md:px-[30px]">
-        <Link to={"/"} className={`flex items-center gap-2 no-underline`}>
-          <img
-            src={logo}
+        <Link href={"/"} className={`flex items-center gap-2 no-underline`}>
+          <Image
+            src={"/assets/images/gt_logo.png"}
             alt="Glory Tabernacle Ministry Logo"
             className={"w-[30px] md:w-[50px] h-full"}
           />
@@ -30,7 +34,7 @@ export const Navbar = () => {
             className={`items-center list-none m-0 gap-1 font-montserrat font-semibold text-white hidden md:flex`}>
             <li>
               <Link
-                to="/"
+                href="/"
                 className={`${styles.nav_link} ${
                   pathname === "/" ? styles.active : ""
                 }`}>
@@ -40,7 +44,7 @@ export const Navbar = () => {
 
             <li class="relative group">
               <Link
-                to="#"
+                href="#"
                 className={`${styles.nav_link} flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
                 <span className="mx-1">About</span>
                 <HiChevronDown />
@@ -49,17 +53,17 @@ export const Navbar = () => {
                 <div class="px-[1px] py-2 bg-white shadow-lg rounded-[8px] text-black w-[250px]">
                   <div class="grid grid-cols-1 gap-1">
                     <Link
-                      to="/about/church-history"
+                      href="/about/church-history"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Church History
                     </Link>
                     <Link
-                      to="/about/board-of-trustees"
+                      href="/about/board-of-trustees"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Board of Trustees
                     </Link>
                     <Link
-                      to="/programmes/weekly-programmes"
+                      href="/programmes/weekly-programmes"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Eldership
                     </Link>
@@ -68,14 +72,14 @@ export const Navbar = () => {
               </div>
             </li>
             <li>
-              <Link to="#" className={styles.nav_link}>
+              <Link href="#" className={styles.nav_link}>
                 Resources
               </Link>
             </li>
 
             <li class="relative group">
               <Link
-                to="/programmes"
+                href="/programmes"
                 className={`${styles.nav_link} flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
                 <span className="mx-1">Programmes</span>
                 <HiChevronDown />
@@ -84,12 +88,12 @@ export const Navbar = () => {
                 <div class="px-[1px] py-2 bg-white shadow-lg rounded-[8px] text-black w-[250px]">
                   <div class="grid grid-cols-1 gap-1">
                     <Link
-                      to="/church-calendar"
+                      href="/church-calendar"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Church Calendar
                     </Link>
                     <Link
-                      to="/weekly-programmes"
+                      href="/weekly-programmes"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Weekly Programmes
                     </Link>
@@ -98,13 +102,13 @@ export const Navbar = () => {
               </div>
             </li>
             <li>
-              <Link to="/missions" className={styles.nav_link}>
+              <Link href="/missions" className={styles.nav_link}>
                 <span className="mx-1">Missions</span>
                 <HiChevronDown />
               </Link>
             </li>
             <li>
-              <Link to="/contact-us" className={styles.nav_link}>
+              <Link href="/contact-us" className={styles.nav_link}>
                 Contact us
               </Link>
             </li>
@@ -141,45 +145,45 @@ export const Navbar = () => {
           </div>
           <ul className="flex flex-col gap-4 py-4 items-start border-b border-[yellow] border-solid text-white">
             <li>
-              <Link to={"/"}>Home</Link>
+              <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <Link to={"/"}>About</Link>
+              <Link href={"/"}>About</Link>
             </li>{" "}
             <li>
-              <Link to={"/"}>Resources</Link>
+              <Link href={"/"}>Resources</Link>
             </li>{" "}
             <li>
-              <Link to={"/"}>Programmes</Link>
+              <Link href={"/"}>Programmes</Link>
             </li>{" "}
             <li>
-              <Link to={"/"}>Missions</Link>
+              <Link href={"/"}>Missions</Link>
             </li>{" "}
             <li>
-              <Link to={"/"}>Contact</Link>
+              <Link href={"/"}>Contact</Link>
             </li>
           </ul>
           <div className="flex items-center text-[yellow] py-4">
             <Link
-              to="https://www.facebook.com/GTMinistryIb/"
+              href="https://www.facebook.com/GTMinistryIb/"
               target="_blank"
               className="me-4 text-reset">
               <FaFacebookF />
             </Link>
             <Link
-              to="https://www.twitter.com/GTMinistryIb/"
+              href="https://www.twitter.com/GTMinistryIb/"
               target="_blank"
               className="me-4 text-reset">
               <FaTwitter />
             </Link>
             <Link
-              to="https://www.youtube.com/GTMinistryIb/"
+              href="https://www.youtube.com/GTMinistryIb/"
               target="_blank"
               className="me-4 text-reset">
               <FaYoutube />
             </Link>
             <Link
-              to="https://www.instagram.com/GTMinistryIb/"
+              href="https://www.instagram.com/GTMinistryIb/"
               target="_blank"
               className="me-4 text-reset">
               <FaInstagram />

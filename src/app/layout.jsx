@@ -1,8 +1,43 @@
-import { Inter } from "next/font/google";
+import {
+  Inter,
+  Montserrat,
+  Josefin_Sans,
+  Ubuntu,
+  Raleway,
+} from "next/font/google";
 import "./globals.css";
 import { Footer, Navbar } from "../components";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
+
+const josefin_sans = Josefin_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-josefin",
+});
+
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-ubuntu",
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-raleway",
+});
 
 export const metadata = {
   title: "Glory Tabernacle Ministry - Ojurin, Ibadan",
@@ -12,8 +47,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* <Navbar /> */}
+      <body
+        className={`${inter.variable} ${montserrat.variable} ${ubuntu.variable} ${josefin_sans.variable} ${raleway.variable}`}>
+        <Navbar />
         {children}
         <Footer />
       </body>
