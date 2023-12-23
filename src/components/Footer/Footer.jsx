@@ -9,7 +9,7 @@ import {
   FaEnvelope,
   FaPhone,
 } from "react-icons/fa6";
-import logo from "../../assets/images/gt_logo.png";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -53,8 +53,8 @@ export const Footer = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <div className="text-uppercase fw-bold mb-1 flex align-items-center gap-6">
-                  <img
-                    src={logo}
+                  <Image
+                    src={"/assets/images/gt_logo.png"}
                     alt="Logo"
                     width="50"
                     height="auto"
