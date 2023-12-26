@@ -42,16 +42,16 @@ export const Navbar = () => {
               </Link>
             </li>
 
-            <li class="relative group">
+            <li className="relative group">
               <Link
                 href="#"
                 className={`${styles.nav_link} flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
                 <span className="mx-1">About</span>
                 <HiChevronDown />
               </Link>
-              <div class="absolute z-10 hidden bg-grey-200 group-hover:block">
-                <div class="px-[1px] py-2 bg-white shadow-lg rounded-[8px] text-black w-[250px]">
-                  <div class="grid grid-cols-1 gap-1">
+              <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
+                <div className="px-[1px] py-2 bg-white shadow-lg rounded-[8px] text-black w-[250px]">
+                  <div className="grid grid-cols-1 gap-1">
                     <Link
                       href="/about/church-history"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
@@ -77,16 +77,16 @@ export const Navbar = () => {
               </Link>
             </li>
 
-            <li class="relative group">
+            <li className="relative group">
               <Link
                 href="/programmes"
                 className={`${styles.nav_link} flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
                 <span className="mx-1">Programmes</span>
                 <HiChevronDown />
               </Link>
-              <div class="absolute z-10 hidden bg-grey-200 group-hover:block">
-                <div class="px-[1px] py-2 bg-white shadow-lg rounded-[8px] text-black w-[250px]">
-                  <div class="grid grid-cols-1 gap-1">
+              <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
+                <div className="px-[1px] py-2 bg-white shadow-lg rounded-[8px] text-black w-[250px]">
+                  <div className="grid grid-cols-1 gap-1">
                     <Link
                       href="/church-calendar"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
