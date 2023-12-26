@@ -125,7 +125,7 @@ export const Navbar = () => {
           />
         </div>
         <div
-          className={`absolute top-0 left-0 bg-gt_purple w-full rounded-br-[15px] rounded-bl-[15px] px-[20px] transition-all duration-500 ${
+          className={`absolute top-0 left-0 bg-gt_purple w-full rounded-br-[15px] rounded-bl-[15px] px-[20px] transition-all duration-500 z-[500] ${
             isOpen ? "translate-y-[0px]" : "-translate-y-[500px]"
           }`}>
           <div className="flex justify-between items-center mb-[20px]">

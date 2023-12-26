@@ -52,9 +52,14 @@ export const Footer = () => {
         <section className="">
           <div className="container mx-auto text-start mt-5">
             <div className="grid grid-cols-2 md:grid-cols-4 mt-3">
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <div className="mx-auto mb-4">
                 <div className="text-uppercase fw-bold mb-1 flex align-items-center gap-6">
-                  <Image src={logo} alt="Logo" height="auto" className="" />
+                  <Image
+                    src={logo}
+                    alt="Logo"
+                    height="auto"
+                    className="w-[50px] h-[50px]"
+                  />
                 </div>
                 <h3 className="text-uppercase fw-bold mb-4">
                   Glory Tabernacle Ministry
@@ -66,8 +71,8 @@ export const Footer = () => {
                 </p>
               </div>
 
-              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Teams</h6>
+              <div className="mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">Human Teams</h6>
                 <p>
                   <a href="#!" className="text-reset">
                     Glory Men
@@ -95,13 +100,8 @@ export const Footer = () => {
                 </p>
               </div>
 
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Menu links</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Church history
-                  </a>
-                </p>
+              <div className="mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">Ministries</h6>
                 <p>
                   <a href="#!" className="text-reset">
                     ADMI
@@ -109,17 +109,17 @@ export const Footer = () => {
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Missions
+                    BGS
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Help
+                    Missions
                   </a>
                 </p>
               </div>
 
-              <ul className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <ul className="mx-auto md:mb-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
 
                 <li className="">
@@ -130,7 +130,8 @@ export const Footer = () => {
                       <FaLocationDot />
                     </div>
                     <span>
-                      Glory Tabernacle Ministry, Oju-Irin, Bodija, Ibadan
+                      Bethel land, Glory Tabernacle Ministry, Oju-Irin, Bodija,
+                      Ibadan
                     </span>
                   </a>
                 </li>

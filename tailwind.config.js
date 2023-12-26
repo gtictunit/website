@@ -26,6 +26,7 @@ module.exports = {
         josefin_sans: ["var(--font-josefin)"],
         ubuntu: ["var(--font-ubuntu)"],
         raleway: ["var(--font-raleway)"],
+        corben: ["var(--font-corben)"],
       },
     },
   },

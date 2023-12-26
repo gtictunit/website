@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import Image from "next/image";
 import vision from "../../../public/assets/images/vision.png";
 import mission from "../../../public/assets/images/target.png";
@@ -13,12 +14,21 @@ import miracle_service from "../../../public/assets/images/Miracle and Communion
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { EffectCards } from "swiper/modules";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { EffectCards, Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import { FaArrowTurnDown } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Home() {
+  const progressCircle = React.useRef(null);
+  const progressContent = React.useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
+
   return (
     <main className="">
       <section
@@ -29,11 +39,11 @@ export default function Home() {
         <div className="overlay absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]" />
         <div className="relative w-full h-full">
           <div className="w-full h-full container mx-auto flex flex-col items-center justify-center text-center text-white text-[40px] md:text-[72px] font-bold">
-            <div className="font-josefin_sans text-[40px] md:text-[90px]">
+            <div className="font-josefin_sans text-[40px] md:text-[90px] drop-in">
               <h2>Welcome To</h2>
               <h2>Glory Tabernacle Ministry</h2>
             </div>
-            <div className="text-base md:text-[22px] mt-[24px] md:mt-[48px] flex gap-[20px] font-montserrat font-semibold drop-in-2">
+            <div className="text-base md:text-[22px] mt-[24px] md:mt-[48px] flex gap-[20px] font-raleway font-semibold drop-in-2">
               <span>SALVATION</span>| <span>SANCTIFICATION</span>|
               <span>SERVICE</span>
             </div>
@@ -44,14 +54,14 @@ export default function Home() {
       <section className="vision">
         <div className="w-full container mx-auto flex justify-center my-10 p-6">
           <div className="relative w-full md:w-[80%] h-full bg-white rounded-[12px] md:rounded-[20px] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] z-50 mt-[-100px] p-[20px] md:p-[50px]">
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 divide-y md:divide-x">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 md:divide-x">
               <div className="flex flex-row justify-start items-center gap-1 px-5">
                 <div className="w-1/3">
                   <Image src={vision} className="w-[75px] h-[75px]" alt="" />
                 </div>
                 <div className="w-2/3">
                   <h6 className="text-black font-montserrat font-semibold text-[28px]">
-                    Our Vision
+                    Vision
                   </h6>
                   <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -66,7 +76,7 @@ export default function Home() {
                 </div>
                 <div className="w-2/3">
                   <h6 className="text-black font-montserrat font-semibold text-[28px]">
-                    Our Mission
+                    Mission
                   </h6>
                   <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -126,7 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services container mx-auto flex justify-center">
+      <section className="services container mx-auto flex justify-center p-[20px]">
         <div className="py-[50px] flex flex-col items-center gap-8">
           <div className="services-title">
             <h2>Our Services</h2>
@@ -136,8 +146,17 @@ export default function Home() {
             <Swiper
               effect={"cards"}
               grabCursor={true}
-              modules={[EffectCards]}
-              className="mySwiper">
+              modules={[EffectCards, Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              onAutoplayTimeLeft={onAutoplayTimeLeft}>
               <SwiperSlide className="">
                 <Link
                   href="https://www.youtube.com/@GTMinistryIb/streams"
@@ -166,6 +185,12 @@ export default function Home() {
                   <Image src={hodh} alt="" />
                 </Link>
               </SwiperSlide>
+              <div className="autoplay-progress" slot="container-end">
+                <svg viewBox="0 0 48 48" ref={progressCircle}>
+                  <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span ref={progressContent}></span>
+              </div>
             </Swiper>
           </div>
         </div>
@@ -173,27 +198,6 @@ export default function Home() {
     </main>
   );
 }
-
-/* SWIPER */
-// .our-services {
-//   font-weight: 700;
-//   font-size: 80px;
-//   font-family: "Josefin Sans", sans-serif;
-//   display: flex;
-//   align-items: center;
-//   gap: 20px;
-//   background: -webkit-linear-gradient(180deg, red, blue, #9900cc);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
-// .services {
-//   padding: 50px 0;
-//   display: flex;
-//   align-items: center;
-// }
-// .swiper {
-//   width: 100%;
-// }
 
 // .swiper-slide {
 //   display: flex;
