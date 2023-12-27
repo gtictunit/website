@@ -10,7 +10,7 @@ const ChurchHistory = () => {
     <>
       <HeaderOverlay>In the beginning...</HeaderOverlay>
       <div
-        class={`w-full container mx-auto py-5 md:py-[100px] flex flex-col md:flex-row`}>
+        class={`w-full container mx-auto py-5 md:py-[100px] flex flex-col md:flex-row px-[20px] md:px-[100px]`}>
         <div class="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-2">
           <div class="flex gap-1">
             <div
@@ -64,14 +64,17 @@ const ChurchHistory = () => {
         </div>
 
         <div
-          class={`w-full md:w-1/2 mt-4 md:mt-0 px-5 md:px-[75px] text-black`}
+          class={`w-full md:w-1/2 mt-4 md:mt-0 text-black`}
           data-aos="fade-left"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"
           data-aos-anchor-placement="top-center">
-          <h1 className={"mt-[15px] mb-[20px] font-josefin_sans font-bold"}>
+          <h1
+            className={
+              "mt-[15px] mb-[20px] text-[24px] md:text-[40px] font-josefin_sans font-bold"
+            }>
             Uniting people with purpose
           </h1>
           <p className={"font-raleway leading-[30px]"}>
@@ -86,7 +89,7 @@ const ChurchHistory = () => {
             laudantium, ipsum laboriosam odio, ipsam ratione quisquam commodi! A
             officiis voluptates ut sapiente!
           </p>
-          <button type="button" class="btn-primary rounded-3 custom-button">
+          <button type="button" class="rounded-[30px] my-[40px] custom-button">
             Learn more
           </button>
         </div>

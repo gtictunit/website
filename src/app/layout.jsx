@@ -14,6 +14,7 @@ import "../styles/drop-in.animation.css";
 import "animate.css";
 
 import { Footer, Navbar } from "../components";
+import { AOSInit } from "../utils";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -62,6 +63,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit />
       <body
         className={`${inter.variable} ${montserrat.variable} ${ubuntu.variable} ${josefin_sans.variable} ${raleway.variable} ${corben.variable}`}>
         <Navbar />

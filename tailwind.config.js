@@ -11,6 +11,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "header-overlay": "url('/assets/images/about.jpg')",
       },
       colors: {
         gt_purple: "#3d0052",

@@ -149,10 +149,10 @@ export const Navbar = () => {
             </li>
             <li>
               <Link href={"/"}>About</Link>
-            </li>{" "}
+            </li>
             <li>
               <Link href={"/"}>Resources</Link>
-            </li>{" "}
+            </li>
             <li>
               <Link href={"/"}>Programmes</Link>
             </li>{" "}
@@ -160,7 +160,7 @@ export const Navbar = () => {
               <Link href={"/"}>Missions</Link>
             </li>{" "}
             <li>
-              <Link href={"/"}>Contact</Link>
+              <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>
           <div className="flex items-center text-[yellow] py-4">

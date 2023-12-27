@@ -32,3 +32,18 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.custom-button {
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(109, 9, 121, 1) 35%,
+    rgba(203, 42, 42, 1) 75%
+  );
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none !important;
+  color: white;
+}

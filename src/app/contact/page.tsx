@@ -1,6 +1,18 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./contact.module.css";
 import { HeaderOverlay } from "../../components";
+
+import phone from "../../../public/assets/images/phone.png";
+import email from "../../../public/assets/images/email.png";
+import location from "../../../public/assets/images/location-pin.png";
+
+const contact_card =
+  "w-full shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] border border-transparent border-solid bg-white p-[12px] md:p-[20px] flex items-center gap-[18px] md:gap-[24px] h-full flex-1";
+const icon_wrapper = "w-[24px] h-[24px] md:w-[40px] md:h-[40px]";
+const contact_title =
+  "font-josefin_sans text-[#5c5c5c] text-[24px] font-semibold mb-0";
+const contact_text = "text-[#979797] mb-0 ";
 
 const Contact = () => {
   return (
@@ -9,51 +21,52 @@ const Contact = () => {
         <div className={"relative"}>
           <HeaderOverlay>Reach us</HeaderOverlay>
 
-          <div className={styles.contact_wrapper}>
-            <div className="container-xl">
-              <div className={styles.address}>
-                <h4>We are located at:</h4>
-                <p>
+          <div className={"text-[#3d0052] bg-white"}>
+            <div className="w-full container mx-auto px-[20px] md:px-[100px] py-[32px] md:py-[75px]">
+              <div>
+                <h4 className="font-montserrat text-[#353535] text-[24px] md:text-[45px] font-medium">
+                  We are located at:
+                </h4>
+                <p className="font-raleway text-[#5c5c5c] text-[14px] md:text-[20px] font-normal">
                   Bethel land, Glory Tabernacle Ministry, Ojurin Bodija, Ibadan
                 </p>
               </div>
 
-              <div className={styles.contact_cta}>
-                <div className={styles.contact_card}>
-                  <div className={styles.icon_wrapper}>
-                    <img src="./assets/images/email.png" alt="" width="100%" />
+              <div
+                className={
+                  "flex flex-col md:flex-row items-center justify-center gap-[32px] box-border h-full my-[30px] md:my-[75px]"
+                }>
+                <div className={contact_card}>
+                  <div className={icon_wrapper}>
+                    <Image src={email} alt="" />
                   </div>
-                  <div className={styles.contact_details}>
-                    <h4>Email</h4>
+                  <div>
+                    <h4 className={contact_title}>Email</h4>
                     <div>
-                      <p>support@email.com</p>
+                      <p className={contact_text}>support@email.com</p>
                     </div>
                   </div>
                 </div>
-                <div className={styles.contact_card}>
-                  <div className={styles.icon_wrapper}>
-                    <img src="./assets/images/phone.png" alt="" width="100%" />
+                <div className={contact_card}>
+                  <div className={icon_wrapper}>
+                    <Image src={phone} alt="" />
                   </div>
-                  <div className={styles.contact_details}>
-                    <h4>Call us</h4>
+                  <div>
+                    <h4 className={contact_title}>Call us</h4>
                     <div>
-                      <p>+234-818-074-6707</p>
+                      <p className={contact_text}>+234-818-074-6707</p>
                     </div>
                   </div>
                 </div>
 
-                <div className={styles.contact_card}>
-                  <div className={styles.icon_wrapper}>
-                    <img
-                      src="./assets/images/location-pin.png"
-                      alt=""
-                      width="100%"
-                    />
+                <div className={contact_card}>
+                  <div className={icon_wrapper}>
+                    <Image src={location} alt="" />
                   </div>
-                  <div className={styles.contact_details}>
-                    <h4>Address</h4>
+                  <div>
+                    <h4 className={contact_title}>Address</h4>
                     <div>
-                      <p>support@email.com</p>
+                      <p className={contact_text}>support@email.com</p>
                     </div>
                   </div>
                 </div>
@@ -62,10 +75,10 @@ const Contact = () => {
           </div>
 
           <div className={"w-full bg-[#f9f9f9]"}>
-            <div className="container mx-auto">
+            <div className="container mx-auto  px-[20px] md:px-[100px] ">
               <div className="px-[20px] md:px-[40px]">
                 <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-                  <div className={`w-full md:w-2/5 py-[100px]`}>
+                  <div className={`w-full py-[100px]`}>
                     <div className="mb-5">
                       <h3 className="font-josefin_sans text-black text-[28px] md:text-[42px] mb-[5px]">
                         Get in touch
@@ -133,7 +146,7 @@ const Contact = () => {
 
                   <div
                     className={
-                      "w-full md:w-2/5 h-[400px] mb-[30px] md:mb-0 shadow-[0px_8px_24px_rgba(149,157,165,0.2)]"
+                      "w-full h-[400px] mb-[30px] md:mb-0 shadow-[0px_8px_24px_rgba(149,157,165,0.2)]"
                     }>
                     <iframe
                       title=""
