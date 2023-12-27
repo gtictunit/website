@@ -154,13 +154,15 @@ export const Navbar = () => {
           </div>
           <ul className="flex flex-col gap-5 py-4 items-start border-b border-[yellow] border-solid text-white font-semibold font-montserrat">
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"} onClick={() => setOpen(false)}>
+                Home
+              </Link>
             </li>
             <li>
               <Link
                 href={"/"}
                 className="flex items-center justify-start gap-2">
-                About{" "}
+                About
                 <FaChevronRight
                   className="text-[12px] font-bold"
                   color="yellow"
@@ -183,17 +185,16 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href={"/"}
+                href={"/missions"}
+                onClick={() => setOpen(false)}
                 className="flex items-center justify-start gap-2">
                 Missions
-                <FaChevronRight
-                  className="text-[12px] font-bold"
-                  color="yellow"
-                />
               </Link>
             </li>
             <li>
-              <Link href={"/contact"}>Contact</Link>
+              <Link href={"/contact"} onClick={() => setOpen(false)}>
+                Contact
+              </Link>
             </li>
           </ul>
           <div className="flex items-center text-[yellow] py-7">
