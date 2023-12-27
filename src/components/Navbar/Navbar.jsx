@@ -6,7 +6,12 @@ import styles from "./navbar.module.css";
 import { HiChevronDown } from "react-icons/hi";
 import { Twirl as Hamburger } from "hamburger-react";
 import { FaTwitter } from "react-icons/fa";
-import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa6";
+import {
+  FaYoutube,
+  FaInstagram,
+  FaFacebookF,
+  FaChevronRight,
+} from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -108,7 +113,11 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className={styles.nav_link}>
+              <Link
+                href="/contact"
+                className={`${styles.nav_link} ${
+                  pathname === "/" ? styles.active : ""
+                }`}>
                 Contact us
               </Link>
             </li>
@@ -128,7 +137,7 @@ export const Navbar = () => {
           className={`absolute top-0 left-0 bg-gt_purple w-full rounded-br-[15px] rounded-bl-[15px] px-[20px] transition-all duration-500 z-[500] ${
             isOpen ? "translate-y-[0px]" : "-translate-y-[500px]"
           }`}>
-          <div className="flex justify-between items-center mb-[20px]">
+          <div className="flex justify-between items-center mt-[14px] mb-[20px]">
             <Image
               src={logo}
               alt="Glory Tabernacle Ministry Logo"
@@ -143,49 +152,73 @@ export const Navbar = () => {
               size={20}
             />{" "}
           </div>
-          <ul className="flex flex-col gap-4 py-4 items-start border-b border-[yellow] border-solid text-white">
+          <ul className="flex flex-col gap-5 py-4 items-start border-b border-[yellow] border-solid text-white font-semibold font-montserrat">
             <li>
               <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <Link href={"/"}>About</Link>
+              <Link
+                href={"/"}
+                className="flex items-center justify-start gap-2">
+                About{" "}
+                <FaChevronRight
+                  className="text-[12px] font-bold"
+                  color="yellow"
+                />
+              </Link>
             </li>
             <li>
               <Link href={"/"}>Resources</Link>
             </li>
             <li>
-              <Link href={"/"}>Programmes</Link>
-            </li>{" "}
+              <Link
+                href={"/"}
+                className="flex items-center justify-start gap-2">
+                Programmes
+                <FaChevronRight
+                  className="text-[12px] font-bold"
+                  color="yellow"
+                />
+              </Link>
+            </li>
             <li>
-              <Link href={"/"}>Missions</Link>
-            </li>{" "}
+              <Link
+                href={"/"}
+                className="flex items-center justify-start gap-2">
+                Missions
+                <FaChevronRight
+                  className="text-[12px] font-bold"
+                  color="yellow"
+                />
+              </Link>
+            </li>
             <li>
               <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>
-          <div className="flex items-center text-[yellow] py-4">
+          <div className="flex items-center text-[yellow] py-7">
             <Link
               href="https://www.facebook.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaFacebookF />
             </Link>
             <Link
               href="https://www.twitter.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaTwitter />
             </Link>
             <Link
               href="https://www.youtube.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaYoutube />
             </Link>
             <Link
               href="https://www.instagram.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaInstagram />
             </Link>
           </div>

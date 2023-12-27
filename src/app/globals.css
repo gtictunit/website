@@ -22,12 +22,6 @@ body {
 }
 
 .services-title {
-  font-weight: 700;
-  font-size: 80px;
-  font-family: "Josefin Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 20px;
   background: -webkit-linear-gradient(180deg, red, blue, #9900cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
