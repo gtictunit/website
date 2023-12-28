@@ -10,15 +10,15 @@ const ChurchHistory = () => {
     <>
       <HeaderOverlay>In the beginning...</HeaderOverlay>
       <div
-        class={`w-full container mx-auto py-5 md:py-[100px] flex flex-col md:flex-row px-[20px] md:px-[100px]`}>
-        <div class="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-2">
-          <div class="flex gap-1">
+        className={`w-full container mx-auto py-5 md:py-[100px] flex flex-col md:flex-row px-[20px] md:px-[100px]`}>
+        <div className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-2">
+          <div className="flex gap-1">
             <div
-              class={`card px-[2px] rounded-[20px] text-white border-none h-[400px] w-[190px] md:mr-[25px] p-0 border-0  mt-[100px]`}>
+              className={`card px-[2px] rounded-[20px] text-white border-none h-[400px] w-[190px] md:mr-[25px] p-0 border-0  mt-[100px]`}>
               <Image
                 src={pioneerPastor}
                 width="100%"
-                class={`object-cover h-[400px] rounded-[20px]`}
+                className={`object-cover h-[400px] rounded-[20px]`}
                 alt=""
                 data-aos="fade-up"
                 data-aos-offset="-100"
@@ -31,10 +31,10 @@ const ChurchHistory = () => {
               />
             </div>
             <div
-              class={`card px-[2px] rounded-[20px] text-white border-none h-[400px] w-[190px] md:mr-[25px] p-0 border-0  mt-[55px]`}>
+              className={`card px-[2px] rounded-[20px] text-white border-none h-[400px] w-[190px] md:mr-[25px] p-0 border-0  mt-[55px]`}>
               <Image
                 src={pioneerPastorAndMummyChy}
-                class={`object-cover h-[400px] rounded-[20px]`}
+                className={`object-cover h-[400px] rounded-[20px]`}
                 alt=""
                 data-aos="fade-up"
                 data-aos-offset="-55"
@@ -47,10 +47,10 @@ const ChurchHistory = () => {
               />
             </div>
             <div
-              class={`card px-[2px] rounded-[20px] text-white border-none h-[400px] w-[190px] md:mr-[25px] p-0 border-0  mt-[15px]`}>
+              className={`card px-[2px] rounded-[20px] text-white border-none h-[400px] w-[190px] md:mr-[25px] p-0 border-0  mt-[15px]`}>
               <Image
                 src={mummyChy}
-                class={`object-cover h-[400px] rounded-[20px]`}
+                className={`object-cover h-[400px] rounded-[20px]`}
                 alt=""
                 data-aos="fade-up"
                 data-aos-duration="750"
@@ -64,7 +64,7 @@ const ChurchHistory = () => {
         </div>
 
         <div
-          class={`w-full md:w-1/2 mt-4 md:mt-0 text-black`}
+          className={`w-full md:w-1/2 mt-4 md:mt-0 text-black`}
           data-aos="fade-left"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
@@ -89,7 +89,9 @@ const ChurchHistory = () => {
             laudantium, ipsum laboriosam odio, ipsam ratione quisquam commodi! A
             officiis voluptates ut sapiente!
           </p>
-          <button type="button" class="rounded-[30px] my-[40px] custom-button">
+          <button
+            type="button"
+            className="rounded-[30px] my-[40px] custom-button">
             Learn more
           </button>
         </div>

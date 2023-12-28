@@ -7,19 +7,19 @@ const MissionTeams = () => {
       <HeaderOverlay>Mission Support</HeaderOverlay>
       <section className="w-full container mx-auto flex justify-center">
         <div className="p-[20px] md:p-[100px]">
-          <div class="font-raleway">
-            <div class="md:mx-[10vh]">
+          <div className="font-raleway">
+            <div className="md:mx-[10vh]">
               <h1 className="font-josefin_sans text-[30px] md:text-[45px] font-semibold">
                 Mission Teams
                 <div className="w-full h-[4px] bg-[#a71919]"></div>
               </h1>
               <br />
-              <span class="">
+              <span className="">
                 Members of the church who feel that they have missionary calling
                 can avail themselves of the various opportunities provided in
                 the church. There are three mission related teams in the church.
-                <ul class="">
-                  <li>
+                <ul className="my-4">
+                  <li className="text-[18px]">
                     <b>Mission Support Group</b>
                   </li>
                   <ul>
@@ -31,8 +31,8 @@ const MissionTeams = () => {
                     </li>
                   </ul>
                 </ul>
-                <ul class="">
-                  <li>
+                <ul className="mb-4">
+                  <li className="text-[18px]">
                     <b>Mission Prayer Support Group</b>
                   </li>
                   <ul>
@@ -49,8 +49,8 @@ const MissionTeams = () => {
                     </li>
                   </ul>
                 </ul>
-                <ul class="">
-                  <li>
+                <ul className="mb-4">
+                  <li className="text-[18px]">
                     <b>Short-term Mission Volunteers</b>
                   </li>
                   <ul>
