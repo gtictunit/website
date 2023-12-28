@@ -13,7 +13,7 @@ import elder_oshafi from "../../../../public/assets/images/eldership/elder_oshaf
 const image =
   "rounded-[20px] h-[350px] md:h-[400px] object-cover mb-[5px] md:mb-[10px]";
 const name =
-  "text-[21px] md:text-[28px] font-light text-[#088df9] font-montserrat mb-0 md:mb-[5px]";
+  "text-[21px] md:text-[24px] font-light text-[#088df9] font-montserrat mb-0 md:mb-[5px]";
 const position =
   "text-[#0a3360] text-[14px] md:text-[18px] font-bold font-raleway";
 

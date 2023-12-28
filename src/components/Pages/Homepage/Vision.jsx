@@ -23,29 +23,29 @@ export const Vision = () => {
                   Vision
                 </h6>
                 <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem nostrum earum, libero nihil delectus, officia minima
-                  voluptatem sit
+                  That every member will be a living model of genuine salvation,
+                  sanctification and service, to God&apos;s glory.
                 </p>
               </div>
             </div>
-            <div className="flex flex-row justify-start items-center gap-1 px-5">
+            <div className="flex flex-row justify-start items-center gap-1 px-3 md:px-5">
               <div className="w-1/3">
                 <Image
                   src={mission}
-                  className="w-[40px] h-[40px] md:w-[75px] md:h-[75px]"
+                  className="w-[60px] h-[60px] md:w-[75px] md:h-[75px]"
                   alt=""
                 />
               </div>
               <div className="w-2/3">
                 <h6 className="text-black font-montserrat font-semibold text-[28px]">
-                  Mission
+                  Motto
                 </h6>
                 <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem nostrum earum, libero nihil delectus, officia minima
-                  voluptatem sit
+                  Jesus gave Himself for me, that He might redeem me from all
+                  iniquity and purify me unto Himself a peculiar child, zealous
+                  of good works
                 </p>
+                <p className="font-bold">Titus 2: 14</p>
               </div>
             </div>
             <div className="flex flex-row justify-start items-center gap-1 px-5">
@@ -61,9 +61,7 @@ export const Vision = () => {
                   Participate
                 </h6>
                 <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem nostrum earum, libero nihil delectus, officia minima
-                  voluptatem sit
+                  Follow our services online or visit us physically.
                 </p>
               </div>
             </div>
@@ -73,11 +71,11 @@ export const Vision = () => {
           <div
             className="relative w-full bg-white rounded-[12px] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] z-50 p-[20px] block md:hidden"
             data-aos="fade-up">
-            <div className="flex flex-row justify-start items-center gap-1 px-5">
+            <div className="flex flex-row justify-start items-center gap-1 px-3 md:px-5">
               <div className="w-1/3">
                 <Image
                   src={vision}
-                  className="w-[40px] h-[40px] md:w-[75px] md:h-[75px]"
+                  className="w-[60px] h-[60px] md:w-[75px] md:h-[75px]"
                   alt=""
                 />
               </div>
@@ -86,9 +84,8 @@ export const Vision = () => {
                   Vision
                 </h6>
                 <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem nostrum earum, libero nihil delectus, officia minima
-                  voluptatem sit
+                  That every member will be a living model of genuine salvation,
+                  sanctification and service, to God&apos;s glory.
                 </p>
               </div>
             </div>
@@ -96,34 +93,35 @@ export const Vision = () => {
           <div
             className="relative w-full bg-white rounded-[12px] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] z-50 p-[20px] block md:hidden"
             data-aos="fade-up">
-            <div className="flex flex-row justify-start items-center gap-1 px-5">
+            <div className="flex flex-row justify-start items-center gap-1 px-3 md:px-5">
               <div className="w-1/3">
                 <Image
                   src={mission}
-                  className="w-[40px] h-[40px] md:w-[75px] md:h-[75px]"
+                  className="w-[60px] h-[60px] md:w-[75px] md:h-[75px]"
                   alt=""
                 />
               </div>
               <div className="w-2/3">
                 <h6 className="text-black font-montserrat font-semibold text-[28px]">
-                  Mission
+                  Motto
                 </h6>
                 <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem nostrum earum, libero nihil delectus, officia minima
-                  voluptatem sit
+                  Jesus gave Himself for me, that He might redeem me from all
+                  iniquity and purify me unto Himself a peculiar child, zealous
+                  of good works
                 </p>
+                <p className="font-bold">Titus 2: 14</p>
               </div>
             </div>
           </div>
           <div
             className="relative w-full bg-white rounded-[12px] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] z-50 p-[20px] block md:hidden"
             data-aos="fade-up">
-            <div className="flex flex-row justify-start items-center gap-1 px-5">
+            <div className="flex flex-row justify-start items-center gap-1 px-3 md:px-5">
               <div className="w-1/3">
                 <Image
                   src={participate}
-                  className="w-[40px] h-[40px] md:w-[75px] md:h-[75px]"
+                  className="w-[60px] h-[60px] md:w-[75px] md:h-[75px]"
                   alt=""
                 />
               </div>
@@ -132,9 +130,7 @@ export const Vision = () => {
                   Participate
                 </h6>
                 <p className="text-[#635353] text-[14px] font-raleway opacity-[0.875]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem nostrum earum, libero nihil delectus, officia minima
-                  voluptatem sit
+                  Follow our services online or visit us physically.
                 </p>
               </div>
             </div>

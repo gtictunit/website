@@ -62,13 +62,13 @@ export const Navbar = () => {
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Church History
                     </Link>
-                    <Link
+                    {/* <Link
                       href="/about/board-of-trustees"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Board of Trustees
-                    </Link>
+                    </Link> */}
                     <Link
-                      href="/programmes/weekly-programmes"
+                      href="/about/eldership"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Eldership
                     </Link>
@@ -109,7 +109,6 @@ export const Navbar = () => {
             <li>
               <Link href="/missions" className={styles.nav_link}>
                 <span className="mx-1">Missions</span>
-                <HiChevronDown />
               </Link>
             </li>
             <li>

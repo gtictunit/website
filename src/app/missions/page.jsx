@@ -44,15 +44,13 @@ const Missions = () => {
                     <div class="px-0 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
                       <div class="max-w-xl text-left">
                         <div class="inline-flex px-0 mx-auto rounded-full  ">
-                          <p class="text-4xl tracking-widest text-g font-corben text-[24px] font-bold">
-                            Mission Areas
+                          <p
+                            class="text-4xl tracking-widest text-g font-corben text-[24px] font-bold"
+                            data-aos="fade-up">
+                            Mission Support Areas
                           </p>
                         </div>
-                        <p class="mt-4 text-base leading-relaxed text-gray-600 group-hover:text-white">
-                          Amet minim mollit non deserunt ullamco est sit aliqua
-                          dolor do amet sint. Velit officia consequat duis enim
-                          velit mollit..
-                        </p>
+                        <p class="mt-4 text-base leading-relaxed text-gray-600 group-hover:text-white"></p>
                       </div>
                       <div class="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-3 lg:mt-20 ">
                         <a
@@ -107,7 +105,7 @@ const Missions = () => {
 
                         <a
                           data-aos="fade-up"
-                          href="/about/mission-teams"
+                          href="/missions/teams"
                           class="transition-all  duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  shadow-[0px_8px_24px_rgba(149,157,165,0.2)]">
                           <div class=" absolute  bg-blue-500/50 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  "></div>
                           <div class="py-2 px-3 md:px-9 relative">
