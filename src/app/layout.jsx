@@ -76,7 +76,22 @@ export const metadata = {
     },
   },
   openGraph: {
-    images: "/assets/images/welcome.png",
+    // images: "/assets/images/welcome.png",
+    images: [
+      {
+        url: "https://gt-website-nextjs.vercel.app/assets/images/welcome.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://gt-website-nextjs.vercel.app/assets/images/welcome.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
   title: "Glory Tabernacle Ministry - Ojurin, Ibadan",
   description: "Enter to worship, Depart to serve.",
