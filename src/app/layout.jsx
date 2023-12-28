@@ -57,14 +57,29 @@ const corben = Corben({
   variable: "--font-corben",
 });
 
+// export const metadata = {
+//   ...openGraphImage,
+//   title: "Glory Tabernacle Ministry - Ojurin, Ibadan",
+//   description: "Enter to worship, Depart to serve.",
+//   openGraph: {
+//     title: "Glory Tabernacle Ministry - Ojurin, Ibadan",
+//     description: "Enter to worship, Depart to serve.",
+//   },
+// };
+
 export const metadata = {
-  ...openGraphImage,
+  metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  openGraph: {
+    images: "/assets/images/welcome.png",
+  },
   title: "Glory Tabernacle Ministry - Ojurin, Ibadan",
   description: "Enter to worship, Depart to serve.",
-  openGraph: {
-    title: "Glory Tabernacle Ministry - Ojurin, Ibadan",
-    description: "Enter to worship, Depart to serve.",
-  },
 };
 
 export default function RootLayout({ children }) {

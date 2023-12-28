@@ -46,4 +46,16 @@
   .swiper {
     width: 300px;
   }
+  .autoplay-progress {
+    width: 24px;
+    height: 24px;
+  }
+  .autoplay-progress span {
+    font-size: 10px;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 25px !important;
+    font-weight: bold !important;
+  }
 }
