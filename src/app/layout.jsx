@@ -68,7 +68,7 @@ const corben = Corben({
 // };
 
 export const metadata = {
-  metadataBase: new URL(`https://gt-website-nextjs.vercel.app`),
+  metadataBase: new URL("https://gt-website-nextjs.vercel.app/"),
   alternates: {
     canonical: "/",
     languages: {
