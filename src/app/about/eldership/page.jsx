@@ -11,7 +11,7 @@ import elder_alao from "../../../../public/assets/images/eldership/elder_alao.jp
 import elder_oshafi from "../../../../public/assets/images/eldership/elder_oshafi.jpg";
 
 const image =
-  "rounded-[20px] h-[350px] md:h-[400px] object-cover mb-[5px] md:mb-[10px]";
+  "rounded-[20px] h-[350px] md:h-[400px] object-cover mb-[5px] md:mb-[10px] object-top";
 const name =
   "text-[21px] md:text-[24px] font-light text-[#088df9] font-montserrat mb-0 md:mb-[5px]";
 const position =
