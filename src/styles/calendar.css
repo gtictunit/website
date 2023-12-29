@@ -1,0 +1,27 @@
+.rbc-toolbar-label {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.rbc-btn-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rbc-btn-group button {
+  border: 1px solid transparent !important;
+  background: rgb(116, 55, 139) !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+@media screen and (max-width: 990px) {
+  .rbc-toolbar-label {
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}

@@ -15,10 +15,29 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { RxDotFilled } from "react-icons/rx";
 
 export const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setOpen] = React.useState(false);
+  const [mobileDropdown, setMobileDropdown] = React.useState({
+    about: false,
+    programmes: false,
+  });
+
+  const toggleProgrammesDropdown = () => {
+    setMobileDropdown({
+      ...mobileDropdown,
+      programmes: !mobileDropdown.programmes,
+    });
+  };
+
+  const toggleAboutDropdown = () => {
+    setMobileDropdown({
+      ...mobileDropdown,
+      about: !mobileDropdown.about,
+    });
+  };
 
   return (
     <nav className={"w-full bg-gt_purple  shadow-main"}>
@@ -93,12 +112,12 @@ export const Navbar = () => {
                 <div className="px-[1px] py-2 bg-white shadow-lg rounded-[8px] text-black w-[250px]">
                   <div className="grid grid-cols-1 gap-1">
                     <Link
-                      href="/church-calendar"
+                      href="/programs/calendar"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Church Calendar
                     </Link>
                     <Link
-                      href="/weekly-programmes"
+                      href="/programs/weekly"
                       className="px-4 py-2 hover:bg-gt_purple hover:text-white">
                       Weekly Programmes
                     </Link>
@@ -159,28 +178,128 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href={"/"}
-                className="flex items-center justify-start gap-2">
+                href={"#"}
+                className="flex items-center justify-start gap-2"
+                onClick={toggleAboutDropdown}>
                 About
                 <FaChevronRight
-                  className="text-[12px] font-bold"
+                  className={`text-[12px] font-bold transition-all duration-300 ${
+                    mobileDropdown.about && "rotate-90"
+                  }`}
                   color="yellow"
                 />
               </Link>
+              <div
+                className={`relative transition-all duration-500 ${
+                  mobileDropdown.about
+                    ? "block translate-y-0"
+                    : "hidden translate-y-[-40px]"
+                }`}>
+                <ul className="ml-8 font-light text-[15px] flex flex-col gap-3 mt-3">
+                  <li>
+                    <Link
+                      onClick={() => {
+                        toggleAboutDropdown();
+                        setOpen(false);
+                      }}
+                      href={"/about/church-history"}
+                      className="flex items-center justify-start gap-2">
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                      Church History
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => {
+                        toggleAboutDropdown();
+                        setOpen(false);
+                      }}
+                      href={"/about/eldership"}
+                      className="flex items-center justify-start gap-2">
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                      Eldership
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <Link href={"/"}>Resources</Link>
+              <Link href={"#"}>Resources</Link>
             </li>
             <li>
               <Link
-                href={"/"}
-                className="flex items-center justify-start gap-2">
+                href={"#"}
+                className="flex items-center justify-start gap-2"
+                onClick={toggleProgrammesDropdown}>
                 Programmes
                 <FaChevronRight
-                  className="text-[12px] font-bold"
+                  className={`text-[12px] font-bold transition-all duration-300 ${
+                    mobileDropdown.programmes && "rotate-90"
+                  }`}
                   color="yellow"
                 />
               </Link>
+              <div
+                className={`relative transition-all duration-500 ${
+                  mobileDropdown.programmes
+                    ? "block translate-y-0"
+                    : "hidden translate-y-[-40px]"
+                }`}>
+                <ul className="ml-8 font-light text-[15px] flex flex-col gap-3 mt-3">
+                  <li>
+                    <Link
+                      onClick={() => {
+                        toggleProgrammesDropdown();
+                        setOpen(false);
+                      }}
+                      href={"/programs/calendar"}
+                      className="flex items-center justify-start gap-2">
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                      Church Calendar
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => {
+                        toggleProgrammesDropdown();
+                        setOpen(false);
+                      }}
+                      href={"/programs/weekly"}
+                      className="flex items-center justify-start gap-2">
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                      Weekly Programmes
+                      <RxDotFilled
+                        className="text-[12px] font-bold"
+                        color="yellow"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               <Link

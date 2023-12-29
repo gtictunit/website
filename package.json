@@ -11,9 +11,11 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
+    "dayjs": "^1.11.10",
     "hamburger-react": "^2.5.0",
     "next": "14.0.4",
     "react": "^18",
+    "react-big-calendar": "^1.8.5",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "swiper": "^11.0.5"
