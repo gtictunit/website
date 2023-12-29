@@ -32,15 +32,15 @@ export const metadata = {
     title: "Glory Tabernacle Ministry - Ojurin, Ibadan",
     description: "Enter to worship, Depart to serve.",
     url: "https://gt-website-nextjs.vercel.app/",
-    siteName: "Next.js",
+    siteName: "Glory Tabernacle Ministry",
     images: [
       {
-        url: "https://nextjs.org/og.png", // Must be an absolute URL
+        url: "https://gt-website-nextjs.vercel.app/next.svg", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://nextjs.org/og-alt.png", // Must be an absolute URL
+        url: "https://gt-website-nextjs.vercel.app/next.svg", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: "My custom alt",
