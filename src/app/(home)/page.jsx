@@ -1,7 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { Hero, Services, Vision, WelcomeCTA } from "../../components";
+import {
+  Give,
+  Hero,
+  Services,
+  UpcomingProgrammes,
+  Vision,
+  WelcomeCTA,
+  LiveBroadcast,
+} from "../../components";
 
 export default function Home() {
   return (
@@ -9,7 +17,10 @@ export default function Home() {
       <Hero />
       <Vision />
       <WelcomeCTA />
+      <LiveBroadcast />
       <Services />
+      <Give />
+      <UpcomingProgrammes />
     </main>
   );
 }

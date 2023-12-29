@@ -16,143 +16,157 @@ export const Footer = () => {
   return (
     <>
       <footer className={` bg-gt_purple w-full`}>
-        <section className="container mx-auto flex justify-center md:justify-between p-4 border-solid border-white border-b">
-          <div className="me-5 hidden md:block text-white">
+        <section className="container mx-auto flex items-center justify-center md:justify-between p-4 border-solid border-white border-b">
+          <div className="me-5 hidden md:block text-white font-montserrat">
             <span>Get connected with us on social networks:</span>
           </div>
 
-          <div className="flex items-center text-white">
+          <div className="flex items-center text-gt_yellow py-4">
             <Link
               href="https://www.facebook.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaFacebookF />
             </Link>
             <Link
               href="https://www.twitter.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaTwitter />
             </Link>
             <Link
               href="https://www.youtube.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaYoutube />
             </Link>
             <Link
               href="https://www.instagram.com/GTMinistryIb/"
               target="_blank"
-              className="me-4 text-reset">
+              className="me-5 text-reset">
               <FaInstagram />
             </Link>
           </div>
         </section>
 
         <section className="">
-          <div className="container mx-auto text-start mt-5">
-            <div className="grid grid-cols-2 md:grid-cols-4 mt-3">
+          <div className="container mx-auto text-start mt-5 md:pt-4 md:pb-10 px-[20px]">
+            <div className="grid-1 grid grid-cols-2 md:grid-cols-4 justify-between gap-6 mt-3">
               <div className="mx-auto mb-4">
-                <div className="text-uppercase fw-bold mb-1 flex align-items-center gap-6">
+                <div className="mb-4 flex items-center gap-3">
                   <Image
                     src={logo}
                     alt="Logo"
                     height="auto"
                     className="w-[50px] h-[50px]"
                   />
+                  <h3 className="uppercase font-bold font-ubuntu text-white text-[13px] md:text-base">
+                    Glory Tabernacle Ministry
+                  </h3>
                 </div>
-                <h3 className="text-uppercase fw-bold mb-4">
-                  Glory Tabernacle Ministry
-                </h3>
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+
+                <p className="font-montserrat font-light text-white text-[13px] md:text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur libero quas fuga at. Earum iusto ipsa in sed enim
+                  porro dolorum id labore, ut nisi dignissimos eos maiores
+                  quisquam facilis.
                 </p>
               </div>
 
               <div className="mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Human Teams</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Glory Men
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Glory Women
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Blest
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Glory Youth
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Glory Children
-                  </a>
-                </p>
+                <h6 className="uppercase font-bold mb-2 text-white font-josefin_sans">
+                  Human Teams
+                </h6>
+                <div className="text-white/80 font-montserrat flex flex-col gap-3 text-[13px] md:text-base">
+                  <p>
+                    <a href="#!" className="text-reset">
+                      Glory Men
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-reset">
+                      Glory Women
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-reset">
+                      Blest
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-reset">
+                      Glory Youth
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-reset">
+                      Glory Children
+                    </a>
+                  </p>
+                </div>
               </div>
 
               <div className="mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Ministries</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    ADMI
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    BGS
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Missions
-                  </a>
-                </p>
+                <h6 className="uppercase font-bold mb-2 text-white font-josefin_sans">
+                  Ministries
+                </h6>
+                <div className="text-white/80 font-montserrat flex flex-col gap-3 text-[13px] md:text-base">
+                  <p>
+                    <a href="#!" className="text-reset">
+                      ADMI
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-reset">
+                      BGS
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-reset">
+                      Missions
+                    </a>
+                  </p>
+                </div>
               </div>
 
               <ul className="mx-auto md:mb-0 mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+                <h6 className="uppercase font-bold mb-2 text-white font-josefin_sans">
+                  Contact
+                </h6>
 
-                <li className="">
+                <li className="mb-3">
                   <a
                     href="mailto:gtictunit@gmail.com"
-                    className="no-hover d-flex align-items-start">
-                    <div className="me-3">
+                    className="flex items-center">
+                    <div className="me-3 text-gt_yellow">
                       <FaLocationDot />
                     </div>
-                    <span>
+                    <span className="text-[13px] md:text-base text-white/80 font-montserrat">
                       Bethel land, Glory Tabernacle Ministry, Oju-Irin, Bodija,
                       Ibadan
                     </span>
                   </a>
                 </li>
-                <li>
+                <li className="mb-3">
                   <a
                     href="mailto:gtictunit@gmail.com"
-                    className="no-hover d-flex align-items-start">
-                    <div className="me-3">
+                    className="flex items-center">
+                    <div className="me-3 text-gt_yellow">
                       <FaEnvelope />
                     </div>
-                    <span>gtictunit@gmail.com</span>
+                    <span className="text-[13px] md:text-base text-white/80 font-montserrat">
+                      Gtictunit@gmail.com
+                    </span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="tel:123456"
-                    className="no-hover d-flex align-items-start">
-                    <div className="me-3">
+                <li className="mb-3">
+                  <a href="tel:123456" className="flex items-center">
+                    <div className="me-3 text-gt_yellow">
                       <FaPhone />
                     </div>
-                    <span>+ 01 234 567 88</span>
+                    <span className="text-[13px] md:text-base text-white/80 font-montserrat">
+                      + 01 234 567 88
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -161,10 +175,10 @@ export const Footer = () => {
         </section>
 
         <div
-          className="text-center p-4"
+          className="text-center p-4 text-white font-montserrat"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
           © 2023 Copyright -
-          <a className="text-reset fw-bold px-1" href="/">
+          <a className="text-reset font-bold px-1" href="/">
             Glory Tabernacle Ministry
           </a>
         </div>

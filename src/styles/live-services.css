@@ -1,0 +1,59 @@
+.live-video-section {
+  background-image: url("../../public/assets/images/crd-bg-video.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 80vh; */
+  /* margin-top: 100px; */
+}
+
+.live-description {
+  padding: 25px;
+  position: relative !important;
+}
+
+.live-video-section span {
+  font-size: 16px;
+  color: #d04a48;
+}
+
+.live-video-section h6 {
+  font-size: 50px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.live-video-section p {
+  font-size: 18px;
+  color: #767676;
+  font-weight: 500;
+}
+
+.play-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #d04a48;
+  color: #fff;
+  font-size: 32px;
+}
+
+.fa-play {
+  z-index: 2;
+}
+
+.join-us-live {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #d04a48;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  margin-top: 30px;
+  width: fit-content;
+}

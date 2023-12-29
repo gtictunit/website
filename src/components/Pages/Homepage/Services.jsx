@@ -26,7 +26,9 @@ export const Services = () => {
   };
 
   return (
-    <section className="services container mx-auto flex justify-center md:p-[20px]">
+    <section
+      className="services container mx-auto flex justify-center md:p-[20px]"
+      data-aos="fade-down">
       <div className="py-[20px] md:py-[50px] flex flex-col items-center gap-8">
         <div className="services-title flex items-center gap-[20px]">
           <h2 className="font-bold text-[40px] md:text-[80px] font-josefin_sans flex items-center gap-[10px] md:gap-[20px]">
@@ -37,7 +39,7 @@ export const Services = () => {
             color="blue"
           />
         </div>
-        <div className="relative w-full">
+        <div className="relative w-full" data-aos="fade-up-left">
           <Swiper
             effect={"cards"}
             grabCursor={true}

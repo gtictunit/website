@@ -10,6 +10,7 @@ import {
 import "./globals.css";
 import "../styles/swiper.css";
 import "../styles/drop-in.animation.css";
+import "../styles/live-services.css";
 
 import "animate.css";
 
