@@ -105,19 +105,6 @@ const corben = Corben({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta
-        property="og:image"
-        content="https://gt-website-nextjs.vercel.app/assets/images/welcome.png"
-      />
-      <meta property="og:image:type" content="<generated>" />
-      <meta property="og:image:width" content="<generated>" />
-      <meta property="og:image:height" content="<generated>" />
-
-      <meta name="twitter:image" content="<generated>" />
-      <meta name="twitter:image:type" content="<generated>" />
-      <meta name="twitter:image:width" content="<generated>" />
-      <meta name="twitter:image:height" content="<generated>" />
-
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <link
         rel="apple-touch-icon"
