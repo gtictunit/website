@@ -40,7 +40,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={"w-full bg-gt_purple  shadow-main"}>
+    <nav className={"w-full bg-gt_purple  shadow-main fixed z-[400]"}>
       <div className="container mx-auto w-full flex justify-between items-center py-[10px] px-4 md:px-[30px]">
         <Link href={"/"} className={`flex items-center gap-2 no-underline`}>
           <Image
