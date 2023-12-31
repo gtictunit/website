@@ -48,7 +48,7 @@ export const Navbar = () => {
             alt="Glory Tabernacle Ministry Logo"
             className={"w-[30px] md:w-[50px] h-full"}
           />
-          <p className="font-bold text-[14px] md:text-[20px] flex items-center text-white font-[] hover:text-white/85">
+          <p className="font-bold text-[14px] md:text-[20px] flex items-center text-white font-[] hover:text-white/85 font-josefin_sans">
             Glory Tabernacle Ministry
           </p>
         </Link>
