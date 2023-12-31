@@ -69,7 +69,7 @@ export const Navbar = () => {
             <li className="relative group">
               <Link
                 href="#"
-                className={`${styles.nav_link} flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
+                className={`${styles.nav_link}  ${pathname === "/about" ? styles.active : ""} flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
                 <span className="mx-1">About</span>
                 <HiChevronDown />
               </Link>
@@ -104,7 +104,7 @@ export const Navbar = () => {
             <li className="relative group">
               <Link
                 href="/programmes"
-                className={`${styles.nav_link} flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
+                className={`${styles.nav_link} ${pathname.includes("programs") ? styles.active : ""}  flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat`}>
                 <span className="mx-1">Programmes</span>
                 <HiChevronDown />
               </Link>
