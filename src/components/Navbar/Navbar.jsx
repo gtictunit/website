@@ -126,7 +126,9 @@ export const Navbar = () => {
               </div>
             </li>
             <li>
-              <Link href="/missions" className={styles.nav_link}>
+              <Link href="/missions"   className={`${styles.nav_link} ${
+                  pathname === "/missions" ? styles.active : ""
+                }`}>
                 <span className="mx-1">Missions</span>
               </Link>
             </li>
@@ -134,7 +136,7 @@ export const Navbar = () => {
               <Link
                 href="/contact"
                 className={`${styles.nav_link} ${
-                  pathname === "/" ? styles.active : ""
+                  pathname === "/contact" ? styles.active : ""
                 }`}>
                 Contact us
               </Link>
