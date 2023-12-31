@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${montserrat.variable} ${ubuntu.variable} ${josefin_sans.variable} ${raleway.variable} ${corben.variable} w-screen overflow-x-hidden`}>
         <Navbar />
-          <div className="pt-[65px] md:pt-[80px]">
+          <div className="pt-[65px] md:pt-[70px]">
             {children}
           </div>
         <Footer />
