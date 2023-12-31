@@ -35,12 +35,12 @@ export const metadata = {
     siteName: "Glory Tabernacle Ministry",
     images: [
       {
-        url: "https://www.glorytabernacleibadan.org/assets/images/welcomne.png", // Must be an absolute URL
+        url: "https://www.glorytabernacleibadan.org/assets/images/og.jpg", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://www.glorytabernacleibadan.org/assets/images/welcomne.png", // Must be an absolute URL
+        url: "https://www.glorytabernacleibadan.org/assets/images/og.jpg", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: "Glory Tabernacle Ministry",
